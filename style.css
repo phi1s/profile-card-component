@@ -1,0 +1,130 @@
+:root {
+  --clr-dark-cyan: hsl(185, 75%, 39%);
+  --clr-very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --clr-dark-grayish-blue: hsl(227, 10%, 46%);
+  --clr-dark-gray: hsl(0, 0%, 59%);
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-dark-cyan);
+}
+
+main {
+  width: 326px;
+  height: 374px;
+  border-radius: 15px;
+  background-color: white;
+  z-index: 1;
+}
+
+.img-bg-pattern {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.img-victor {
+  border-radius: 52px;
+  margin-left: calc(326px / 2 - 48px);
+  margin-top: -52px;
+  border: 5px solid white;
+}
+
+section {
+  text-align: center;
+}
+
+h1 {
+  font-weight: 700;
+  line-height: 22px;
+}
+
+span {
+  color: var(--clr-dark-grayish-blue);
+  font-weight: 400;
+  line-height: 22px;
+}
+
+p {
+  color: var(--clr-dark-grayish-blue);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+hr {
+  border: none;
+  background-color: hsl(225, 10%, 92%);
+  height: 1px;
+}
+
+ul {
+  width: 100%;
+  padding: 0;
+  margin-top: -4px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  font-size: 9px;
+  text-align: center;
+}
+
+li p {
+  margin-top: -8px;
+}
+
+.img-top {
+  width: 622px;
+  height: 622px;
+  position: absolute;
+  background-image: url("./images/bg-pattern-top.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: -50%;
+  left: -50%;
+}
+
+.img-bottom {
+  width: 622px;
+  height: 622px;
+  position: absolute;
+  background-image: url("./images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 50%;
+  left: 50%;
+}
+
+@media screen and (min-width: 1200px) {
+  .img-top {
+    width: 978px;
+    height: 978px;
+    position: absolute;
+    background-image: url("./images/bg-pattern-top.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -50%;
+    left: 0;
+  }
+
+  .img-bottom {
+    width: 978px;
+    height: 978px;
+    position: absolute;
+    background-image: url("./images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+  }
+}
